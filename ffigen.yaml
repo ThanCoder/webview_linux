@@ -1,0 +1,18 @@
+# Run with `dart run ffigen --config ffigen.yaml`.
+name: WebviewLinuxBindings
+description: |
+  Bindings for `src/webview_linux.h`.
+
+  Regenerate bindings with `dart run ffigen --config ffigen.yaml`.
+output: "lib/webview_linux_bindings_generated.dart"
+headers:
+  entry-points:
+    - "src/include/webview.h"
+  include-directives:
+    - "src/include/webview.h"
+
+ffi-native:
+comments:
+  style: any
+  length: full
+ignore-source-errors: true
