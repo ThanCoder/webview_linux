@@ -10,17 +10,15 @@ find_package(PkgConfig REQUIRED)
 pkg_check_modules(WEBVIEW_DEPS REQUIRED webkit2gtk-4.1)
 # (မှတ်ချက်: အပေါ်မှာ 4.1-dev သွင်းခဲ့ရင် webkit2gtk-4.1 လို့ ပြောင်းရေးပါ)
 
-# add_executable(webview_linux
-#     test/main.cpp
+add_executable(webview_linux
+    test/main.cpp
+    include/webview.h
+)
+
+# add_library(webview_linux SHARED
 #     include/webview.h
 #     wraper.cpp
-#     # webview_linux.cpp
 # )
-
-add_library(webview_linux SHARED
-    include/webview.h
-    wraper.cpp
-)
 
 target_include_directories(webview_linux PRIVATE
     include
