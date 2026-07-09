@@ -1,5 +1,5 @@
 name: webview_linux
-description: "A new Dart FFI package project."
+description: "A lightweight Dart FFI binding package for embedding WebKitGTK 4.1 webview into Linux applications.
 version: 0.0.1
 repository: https://github.com/ThanCoder/webview_linux.git
 
