@@ -1,6 +1,6 @@
 name: webview_linux
-description: "A lightweight Dart FFI binding package for embedding WebKitGTK 4.1 webview into Linux applications.
-version: 0.0.1
+description: "A lightweight Dart FFI binding package for embedding WebKitGTK 4.1 webview into Linux applications."
+version: 0.0.2
 repository: https://github.com/ThanCoder/webview_linux.git
 
 environment:
@@ -15,3 +15,7 @@ dev_dependencies:
   ffigen: ^20.1.1
   flutter_lints: ^6.0.0
   test: ^1.28.0
+
+
+platforms:
+  linux:
